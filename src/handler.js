@@ -48,7 +48,7 @@ const getAllNotesHandler = () => ({
   // dan data berupa semua catatan yang telah dibuat
   status: 'success',
   data: {
-    notes,
+    noteId: [],
   },
 });
 const getNoteByIdHandler = (request, h) => {
