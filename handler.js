@@ -48,7 +48,7 @@ const getAllNotesHandler = () => ({
   // dan data berupa semua catatan yang telah dibuat
   status: 'success',
   data: {
-    notes,
+    noteid: [],
   },
 });
 const getNoteByIdHandler = (request, h) => {
@@ -141,6 +141,7 @@ const deleteNoteByIdHandler = (request, h) => {
     return response;
   }
 };
+
 // export lebih dari 1 pake object {}
 module.exports = {
   addNoteHandler,
